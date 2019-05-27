@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_base_color"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_base_color"
+        app:tabSelectedTextColor="@android:color/white"
+        app:tabTextColor="@android:color/black">
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabRecent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabSpecial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category" />
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
